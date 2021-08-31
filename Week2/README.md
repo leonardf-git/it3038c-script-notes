@@ -39,6 +39,9 @@ Give the file name your username, botheaj.pub and botheaj.ppk respectively.
 Return to your Linux session. Run the command as your user, making sure all spelling matches:
 
 ```bash
+##you may need to create the .ssh directory. To do this, run 
+$ mkdir ~/.ssh/
+
 $ vim ~/.ssh/authorized_keys
 ```
 
