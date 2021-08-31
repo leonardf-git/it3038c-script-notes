@@ -250,9 +250,9 @@ Run a ‘cat’ command on /var/log/secure to get a list of recent authenticatio
 sudo cat /var/log/secure
 ```
 
-Now apply a GREP filter to it. Let’s find all instances of cechuser
+Now apply a GREP filter to it. Let’s find all instances of student
 ```bash
-sudo cat /var/log/secure | grep cechuser
+sudo cat /var/log/secure | grep student
 ```
 
 That’s quite a bit of data. Let’s find specifically any time root was impersonated
@@ -273,12 +273,12 @@ $ ll | awk '{print $9}'
 Combining Grep and AWK commands, we can get specific data from a command like our cat command above. Let’s see if we can extract the date and time and username only from our secure log file. 
 
 ```bash
-sudo cat /var/log/secure | grep cechuser | awk '{print $1 $2 $3 $13}'
+sudo cat /var/log/secure | grep student | awk '{print $1 $2 $3 $13}'
 ```
 
 Not bad. If we want to make this a little prettier, simply added empty quotations between each variable 
 ```bash
-sudo cat /var/log/secure | grep cechuser | awk '{print $1 " " $2 " " $3 " " $13}'
+sudo cat /var/log/secure | grep student | awk '{print $1 " " $2 " " $3 " " $13}'
 ```
 
 Let’s apply this filter to another command: `ip a`
