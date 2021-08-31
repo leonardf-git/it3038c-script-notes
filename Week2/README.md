@@ -66,7 +66,7 @@ Click Browse and add your SSH Private Key
 
 Return to the Session tab and save the session by entering a session name and clicking Save
 
-![](/screenshots/21-08-28-13-09-23.png =250x)
+![](/screenshots/21-08-28-13-09-23.png)
 
 Now, click Open to open the session. You should be connected as a user, with root access, no password needed. Make sure you can `sudo su` as well. 
 
