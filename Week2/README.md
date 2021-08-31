@@ -491,3 +491,11 @@ Using this template as a starting point, add more data to this script. Please in
 ### Example
 `On Sat Aug 28 14:23:53 EDT 2021, there were 28756489 positive cases, 74582825 negative tests, 500500 deaths and 776361 hospitalized.`
 
+
+Finally, add your script to Github and push. 
+
+```
+git add .
+git commit -m'Lab 2'
+git push origin main
+```
