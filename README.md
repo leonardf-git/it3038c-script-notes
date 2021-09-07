@@ -7,3 +7,4 @@ This repo will include a link to a file for each week of class. This will be in 
 
 - [Week 1](/Week1/README.md)
 - [Week 2](/Week2/README.md)
+- [Week 3](/Week3/README.md)
