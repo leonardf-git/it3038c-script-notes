@@ -475,6 +475,7 @@ Go to https://myaccount.google.com/apppasswords and login with your Google accou
 
 Select an app (Mail) and a device (Other) and type “PowerShell SMTP” and click GENERATE 
  
+![](/screenshots/21-09-07-19-19-13.png)
 
 The displayed password can be used to authenticate your email messages when sent. Using Get-Credential will ask PowerShell to prompt you for login. This is the time you will put in your Google username and app password.  
 
@@ -490,13 +491,15 @@ Graphical user interface, text, application, email
 
 Description automatically generated 
 
+![](/screenshots/21-09-07-19-19-31.png)
+
 ### **WARNING: DO NOT LEAVE THIS ENABLED. Once you finish the lab, please disable this.**
 
 
 Here’s an example of Send-MailMessage 
 
 ```powershell
-Send-MailMessage -To "me@mail.uc.edu" -From "me@mail.uc.edu" -Subject "IT3038C Windows SysInfo" -Body $BODY -SmtpServer smtp.google.com -port 587 -UseSSL -Credential (Get-Credential) 
+Send-MailMessage -To "botheaj@ucmail.uc.edu" -From "ajbothe@gmail.com" -Subject "IT3038C Windows SysInfo" -Body $BODY -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential) 
 ```
 
 
