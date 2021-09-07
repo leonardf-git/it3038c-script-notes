@@ -376,9 +376,9 @@ Yes, that’s what I want… but… I don’t want the loopback address (127.0.0
 To do that, we can use a GREP like command called “Select-string” 
 
  
-
+```powershell
 PS C:\>   (get-netipaddress).ipv4address | Select-String "192*" 
-
+```
  
 
  
