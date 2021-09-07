@@ -33,7 +33,7 @@ Type this command
 ```powershell
 PS C:\>   $HOST
 ```
-The output shows you the version of PowerShell you’re using. 6.1.2 is PowerShell Core. 5.1.xxxx is classic PowerShell. 
+The output shows you the version of PowerShell you’re using. 7.1.2 is PowerShell Core. 5.1.xxxx is classic PowerShell. 
 
  
 
@@ -141,7 +141,7 @@ Get-Help Get-Service -Examples
 
 Get-Help Get-Service –Details  
 
-Get-Help Get-Server –Online  
+Get-Help Get-Service –Online  
  
 
 ### Cmdlets 
@@ -302,7 +302,14 @@ Write-Host($Hello)
  
 F5 or the green arrow will run the script.  
 
- 
+**NOTE**
+
+You have to set your execution policy to allow unsigned scripts. Run the following command
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted 
+
+##confirm the popup with "Yes"
+```
 
 Figure 4 F5 or Green Arrow to run the script 
 
