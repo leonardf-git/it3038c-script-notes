@@ -655,8 +655,8 @@ git checkout origin main
 
 If you’re using Windows, open VSCode and open that folder. You’ll notice there is new highlighting and git options in VSCode, because VSCode knows that this is a git repo.  
 
-You can actually do most of your Git work within VSCode without using command line. Just click the Github icon 
-
+You can actually do most of your Git work within VSCode without using command line. Just click the Github icon on the left. Click the "+" icon to stage your changes. Click the ✓ to commit and add a message. 
+Click the ... and click Push. That's it! 
 
 # Lab 4
 
