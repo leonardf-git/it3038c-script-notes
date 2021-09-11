@@ -7,6 +7,43 @@ Git Markdown Cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-C
  
 ![](https://imgs.xkcd.com/comics/git.png)
 
+# Github CLI
+
+There's a relatively new tool called "Github CLI". It's a command-line program you install to manage your Github repos. 
+
+Let's try it out. 
+
+Go to https://cli.github.com/ and click Download for Windows. 
+
+Run the installation, accepting defaults is fine. 
+
+Now, restart PowerShell and set it up. 
+
+Run 
+```powershell
+gh auth login
+
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 8DC2-5326
+- Press Enter to open github.com in your browser...
+✓ Authentication complete. Press Enter to continue...
+gh repo clone uc-botheaj/it3038c-script-notesgh repo clone uc-botheaj/it3038c-script-notes
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as uc-botheaj
+
+```
+Now, instead of using the git command, you can use the gh command. 
+
+```powershell
+gh repo clone uc-botheaj/it3038c-script-notes
+```
+
+I'm not sold on the advantages of gh cli yet, but there you go. 
 
 # In-Depth with Git 
 
@@ -617,6 +654,9 @@ git checkout origin main
  
 
 If you’re using Windows, open VSCode and open that folder. You’ll notice there is new highlighting and git options in VSCode, because VSCode knows that this is a git repo.  
+
+You can actually do most of your Git work within VSCode without using command line. Just click the Github icon 
+
 
 # Lab 4
 
