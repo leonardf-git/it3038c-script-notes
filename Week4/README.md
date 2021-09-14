@@ -40,7 +40,7 @@ gh repo clone uc-botheaj/it3038c-script-notesgh repo clone uc-botheaj/it3038c-sc
 Now, instead of using the git command, you can use the gh command. 
 
 ```powershell
-gh repo clone uc-botheaj/it3038c-script-notes
+gh repo clone <username>/it3038c-scripts
 ```
 
 I'm not sold on the advantages of gh cli yet, but there you go. 
@@ -163,7 +163,7 @@ Now both files are untracked again. Let’s create a second index.html file call
 ```bash
 cp testing/index.html testing/index2.html 
 
-git add *.html 
+git add testing/*.html 
 
 git status 
 ```
@@ -215,7 +215,7 @@ Now it is removed, but we can do it in one command rather than two. Create the i
 ```bash
 cp testing/index.html testing/index2.html 
 
-git add *.html 
+git add testing/*.html 
 
 git status 
 ```
