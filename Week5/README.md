@@ -637,27 +637,30 @@ Create a new file called `getLogData.py`. You can create this on Windows and mov
 
  
 
-Now, we create the file reader and set our file path. For this, we’ll use /var/log/secure.  
+Now, we create the file reader and set our file path. For this, we’ll use a text file that we'll create.  
+
+in a file called test.txt
+```
+this is a test
+hello world
+this is a test
+hello world
+```
+
+Create a textfile 
 
 ```python
 
-import os 
+import os
 
- 
+filename = "test.txt" 
 
-filename = "/var/log/secure" 
+with open(filename) as f:
+  lines = f.readlines()
+  for line in lines:
+    if "world" in line:
+      print(line)
 
- 
-
-with open(filename) as f: 
-
-  lines = set(f.read().splitlines()) 
-
-  for line in lines: 
-
-    if "botheaj" in line: 
-
-      print(line) 
 ```
  
 
