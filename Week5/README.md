@@ -503,8 +503,7 @@ now, we can iterate through this list with a FOR loop
  
 ```python
 for h in hosts: 
-
-  print socket.gethostbyname(h) 
+  print(socket.gethostbyname(h))
 ```
  
 
