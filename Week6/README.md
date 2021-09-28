@@ -70,7 +70,7 @@ This will print the string with the variable included.
 Node also includes several global variables, denoted with a double underscore “_ _”
 
 ```js
-console.log("directory name: " + dirname); 
+console.log("directory name: " + __dirname); 
 console.log("directory and file name: " + __filename); 
 ```
 
