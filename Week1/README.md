@@ -212,7 +212,8 @@ git config --global user.email "<your-github-email>"
 git config --global user.name "<your-github-username>" 
 git add .
 git commit -m'first commit'
-git checkout –M main
+git checkout -b main
+git branch -d master
 git push origin main
 ```
 `
