@@ -114,7 +114,7 @@ if (process.argv.length <= 2) {
    process.exit(-1)
 }
 
-var ip = process.argv[2]
+var hostname = process.argv[2]
 
 console.log(`Checking IP of: ${hostname}`)
 ```
