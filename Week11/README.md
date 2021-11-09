@@ -75,7 +75,8 @@ Edit `response.send` to include `config.util.getEnv(‘MYNAME’)` and `config.u
 
  
 ```javascript
-response.send('<b>Hello World! My name is = <em>' + config.util.getEnv('MYNAME') + '</em <br /> My Node Environemnt is :' + config.util.getEnv('NODE_ENV') + '</em></b>') 
+response.send('<b>Hello World! My name is = <em>' + process.env.MYNAME + '</em <br /> My Node Environemnt is :' + config.util.getEnv('NODE_ENV') + '</em></b>') 
+
 ```
  
 
