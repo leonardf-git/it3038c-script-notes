@@ -169,7 +169,7 @@ Add the following content:
 
 {% block content %} 
 
-<p><em>Hello, {{ name }}. Welcome to my app!</em></p> 
+<p><em>Hello, {{ value }}. Welcome to my app!</em></p> 
 
 {% endblock %} 
 ```
