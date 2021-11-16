@@ -37,7 +37,7 @@ Here is a shortcut:
 ``` 
 #Windows: 
 py -3 -m venv venv 
-venv\Scripts\activate.bat 
+venv\Scripts\activate.ps1 
 
 #unix:
 python3 -m venv venv 
